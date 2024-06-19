@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login - TimeOn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar" id="navbarId">
+        <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="register.html"><i class="fa fa-fw fa-home"></i> Register New User</a>
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="index.html"><i class="fa fa-fw fa-user"></i> Admin Login</a>
+        <a class="active" href="index_employee.html"><i class="fa fa-fw fa-user"></i> Employee Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbarId");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+
+    <form action="employee_action_page.php" method="post">
+        <div class="imgcontainer">
+            <img src="https://cdn.glitch.global/1c8d8485-d588-4c98-aa36-65523065f7c6/thumbnails%2Fideogram%20(7).jpeg?1695770167340" alt="TimeOn" class="avatar">
+            <p style="font-family:'verdana'">TimeOn</p>
+        </div>
+        <div class="container">
+            <label for="cId"><b>Company ID</b></label>
+            <input type="text" placeholder="Enter Company ID" name="empId" required>
+            <label for="empId"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="empId" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</body>
+</html>

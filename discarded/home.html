@@ -1,0 +1,71 @@
+<!DOCTYP<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TimeOn - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="navbar" id="navbarId">
+        <a class="active" href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="register.html"><i class="fa fa-fw fa-user"></i> Register New User</a>
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="index.html"><i class="fa fa-fw fa-user"></i> Admin Login</a>
+        <a href="index_employee.html"><i class="fa fa-fw fa-user"></i> Employee Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="container">
+        <h1>Welcome to TimeOn!</h1>
+        <p>Our scheduling program is designed for Businesses/Restaurants. The program offers two views, Manager and Employee.</p>
+        <ul>
+            <li><strong>Manager View:</strong> Managers input three types of parameters to keep the business profitable: fixed costs, variable costs, and goals (e.g., schedule to not exceed 25% of variable costs).</li>
+            <li><strong>Employee View:</strong> Employees can input their availability.</li>
+        </ul>
+        <p>The program generates the maximum number of hours to put on the schedule to stay on budget and gives suggestions for scheduling based on employees' availability.</p>
+        <p>Features include:</p>
+        <ul>
+            <li>Efficient shift swaps.</li>
+            <li>Access to coworkers' contact information for coordination.</li>
+            <li>Total hours worked displayed for each employee for payroll purposes.</li>
+            <li>Adjustable hourly export for temporary workers or a weekly, biweekly, or bimonthly export.</li>
+        </ul>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbarId");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+  
+  <div class = "pricinginfo" id = "center">
+    <ol>
+      <h2>Pricing Plans</h2>
+      <li>
+          Tier 1: (Prcing TBD)
+      </li>
+      <br>
+      <li>
+          Tier 2: (Prcing TBD)
+      </li>
+      <br>
+      <li>
+          Tier 3: (Prcing TBD)
+      </li> 
+    </ol>
+  </div>
+  <div class="button-container">
+          <button class="onboard-button">
+            ONBOARD YOUR BUSINESS TODAY
+          </button>
+  </div>
+  
+  
+</body>
+</html>

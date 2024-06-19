@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="register.css"
+    />
+
+    <div class="navbar" id="navbarId">
+        <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a class="active" href="register.html"><i class="fa fa-fw fa-user"></i> Register New User</a>
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="index.html"><i class="fa fa-fw fa-user"></i> Admin Login</a>
+        <a href="index_employee.html"><i class="fa fa-fw fa-user"></i> Employee Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <title>TimeOn</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="register.js"></script>
+  </body>
+
+  <form action="action_page.php" id="myForm" method="get" onsubmit="return handleFormSubmit()">
+    <div class="imgcontainer">
+            <img src="https://cdn.glitch.global/1c8d8485-d588-4c98-aa36-65523065f7c6/thumbnails%2Fideogram%20(7).jpeg?1695770167340" alt="TimeOn" class="avatar">
+            <p style="font-family:'verdana'">TimeOn</p>
+    </div>
+
+    <div class="container">
+      <label for="Email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required />
+        <!--
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required />
+            -->
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required />
+
+      <label for="psw"><b>Password Confirmation</b></label>
+      <input type="password" placeholder="Confirm Password" name="pswr" required />
+      
+      <div>
+        <p class="optiontext">I am an</p>
+        <button id="dropbtn" disabled required>Select Admin or Employee</button>
+        <div id="parent" class="dropdownOptions">
+          <button onclick="setAdmin()" value="none" class="option" formnovalidate >Admin</button>
+          <button onclick="setEmployee()" value="none" class="option" formnovalidate>Employee</button>
+        </div>
+        <p id = "typeError">Please select an option</p>
+      </div>
+
+
+      <button id="submitButton" type="submit">Register</button>
+    </div>
+    <div class="container" style="background-color: #f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="button" class="RegAccount">Register</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</html>

@@ -1,0 +1,214 @@
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  body{
+    margin:0px;
+  }
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  .RegAccount {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #9836f4;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  img.avatar {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn, .RegAccount {
+      width: 100%;
+    }
+  }
+  
+  .navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: right;
+    text-align: center;
+    padding: 9px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0;
+  }
+  
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  
+  
+  .companyid {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .companyid div {
+    width: 48%; /* Adjust the width to give some space between the two divs */
+  }
+  
+  .companyid label,
+  .companyid input {
+    display: block; /* Stack them */
+    width: 100%;
+  }
+  
+  
+  .navbar a.icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+      display: none;
+    }
+    .navbar a.icon {
+      float: left;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {
+      position: relative;
+    }
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  } 
+  
+  .home-content {
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  .home-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .home-content p {
+    margin-bottom: 20px;
+  }
+  
+  .home-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .pricinginfo{
+    float: center;
+    background:#49BC72;
+    margin-top: 16px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  ol{
+    text-align: center;
+    color: white;
+  }
+  
+  ol li{
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    font-style: sans-serif;
+  }
+  
+  h2{
+    font-size: 3em;
+    font-style: sans-serif;
+  }
+  
+  #center
+  {
+   text-align: center;
+   list-style-position: inside;
+  }
+  
+  
+  .button-container {
+      margin-top:20px;
+      float:center;
+    }
+    
+    .button-container button {
+      width: 100px;
+      margin-right: 10px;
+      text-align: center;
+      display: inline-block;
+      font-size:15px;
+      background-color: #1e2835;
+      border-color: #404853;
+      cursor:pointer;
+      background-image: linear-gradient(to bottom,rgba(246,246,246,.1)0%,rgba(30,40,53,0)66%);
+      color: #fafafa;
+    }

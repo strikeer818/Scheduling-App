@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Admin Home Page</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header role="banner">
+  <div class="container">  
+  <h1 class="flowLeft">Admin Home</h1>
+    <nav role="navigation"><br><br><br><br>
+      <ul>
+       <li><a href="AdminPage.html" title="Home">Home</a></li>
+       <li><a href="schedules.html" title="Schedules">Schedules</a></li>
+       <li><a href="goals.html" title="Goals">Goals</a></li>
+       <li><a href="humanresources.html" title="Human Resources">HR</a></li>
+       <li><a href="messages.html" title="Messages">Messages</a></li>
+       <li><a href="account.html" title="MyAccount">My Account</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main role="main">
+  <div class="search-wrapper">
+    <form>
+      <label for="search">&ensp; Find Employee: </label>
+      <input type="search" id="search" placeholder="search">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+      <!--<button type="submit">Search</button>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;-->
+      <input type="checkbox" id="active1" name="Available" value="Active">
+      <label for="active1"> Active</label>
+      <input type="checkbox" id="inactive2" name="Unavailable" value="Inactive">
+      <label for="inactive2"> Inactive</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+      <label for="text"> Filter by: </label>
+      <select for="text">
+        <option value="choose">###</option>
+        <option value="active">ACTIVE</option>
+        <option value="inactive">INACTIVE</option>
+        <option value="positions">POSITIONS</option>
+        <option value="locations">LOCATION</option>
+        <option value="admin">ADMIN</option>
+      </select>
+    </form>
+  </div>
+      <!--<input type="text" id="myInput" placeholder="###" title="filter">-->
+    <div style="text-align: right; padding-right: 60px;">
+      <button type="button" onclick="alert('New Employee added')"> Add New Employee + </button>
+    </div>
+    <section style="padding-bottom: 10px">
+      <table style="width:80%" summary="Employee information">
+        <tr>
+          <th>Lastname </th>
+          <th>Firstname </th>
+          <th>ID </th>
+          <th>Position(s) </th>
+          <th>Location(s) </th>
+          <th>Status </th>
+        </tr>
+        <tr>
+          <td>Doe</td>
+          <td>John</td>
+          <td>0</td>
+          <td>Cashier</td>
+          <td>Northridge</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Jones</td>
+          <td>Kevin</td>
+          <td>1</td>
+          <td>Barista</td>
+          <td>Northridge</td>
+          <td>Inactive</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </section>
+</main>
+<footer role="footer">
+ <p><a href="http://www.csun.edu" title="csun.edu" target="_blank">CSUN</a></p>
+</footer>
+  <script>
+const hardcodedAdmin = {
+    companyID: "comp12345",
+    adminID: "admin001",
+    username: "admin",
+    password: "password123" 
+};
+
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const usernameInput = document.getElementById("username").value;
+    const passwordInput = document.getElementById("password").value;
+
+    if (usernameInput === hardcodedAdmin.username && passwordInput === hardcodedAdmin.password) {
+        alert("Logged in successfully!");
+        // You can hide the login form and show the admin functionalities after successful login.
+        document.querySelector('.login-wrapper').style.display = 'none';
+    } else {
+        alert("Incorrect username or password!");
+    }
+});
+</script>
+
+</body>
+</html>
